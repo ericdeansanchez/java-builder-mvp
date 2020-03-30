@@ -7,7 +7,10 @@ import static UrlBuilder.Constant.IXLIB;
 import static UrlBuilder.Validator.validate;
 
 /**
+ * Primary structure for generating imgix urls.
  *
+ * `Url` are constructed using the builder pattern. This pattern allows
+ * for `Url` to separate its construction from its function.
  */
 public class Url {
     private Scheme scheme;
@@ -25,13 +28,11 @@ public class Url {
         private static final String EMPTY = "";
         // Set https by default.
         private Scheme scheme = HTTPS;
-        private String domain = "example.imgix.net";
+        private String domain = "default.imgix.net";
         private String path = EMPTY;
         private ArrayList<Param> params = new ArrayList<>();
         private String token = EMPTY;
         private boolean lib = true;
-
-        public Builder() {}
 
         /**
          *

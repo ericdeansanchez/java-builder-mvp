@@ -10,4 +10,7 @@ public class Constant {
     public static final String VERSION = "v0.1.0";
     public static final String LIBRARY = "java";
     public static final String IXLIB = LIBRARY + "-" + VERSION;
+
+    public static final String DEFAULT_DOMAIN = "default.imgix.net";
+    public static final String EXAMPLE_DOMAIN = "example.imgix.net";
 }
